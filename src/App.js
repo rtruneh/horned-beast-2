@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Main from './Components/Main';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main';
 import {animalData} from './data';
 
 function App() {
@@ -14,11 +14,12 @@ function App() {
   // };
 
   return (
-     <div className="App">
-       <Header/>
-       {/* passing into main so main can use them.  */}
-       <Main animalData={animalData}/>
-       <Footer/>
+    <div className="App">
+      <Header/>
+      {/* passing into main so main can use them.  */}
+      <Main 
+        animalData={animalData}/>
+      <Footer/>
     </div>
   );
 }
